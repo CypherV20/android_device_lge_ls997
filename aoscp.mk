@@ -1,12 +1,12 @@
 $(call inherit-product, device/lge/ls997/full_ls997.mk)
 
 # Inherit some common EMOTION stuff.
-$(call inherit-product, vendor/emotion/configs/common_full_phone.mk)
+$(call inherit-product, vendor/aoscp/configs/common.mk)
 
 # Overlays (inherit after vendor/cm to ensure we override it)
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
-PRODUCT_NAME := emotion_ls997
+PRODUCT_NAME := aoscp_ls997
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE="v20" \

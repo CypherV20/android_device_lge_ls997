@@ -19,6 +19,7 @@ set -e
 
 export DEVICE=ls997		
 export DEVICE_COMMON=v20-common
+export PLATFORM_COMMON=msm8996-common
 export VENDOR=lge
 
 ./../$DEVICE_COMMON/extract-files.sh $@
